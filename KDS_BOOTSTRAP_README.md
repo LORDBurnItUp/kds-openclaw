@@ -4,18 +4,24 @@
 
 ## Quick Start
 
-### Option 1: Copy-paste one-liner
-```bash
-# Download and run
-curl -sSL https://raw.githubusercontent.com/kingsdrippingswag/kds-openclaw/main/kds-bootstrap.sh | bash
+### 🪟 Windows 10/11 (Beginner-Friendly)
 
-# Or with interactive API key setup
-curl -sSL https://raw.githubusercontent.com/kingsdrippingswag/kds-openclaw/main/kds-bootstrap.sh | bash -s -- --with-api-keys
+**One command — open Terminal or PowerShell and paste:**
+```powershell
+irm https://raw.githubusercontent.com/LORDBurnItUp/kds-openclaw/main/kds-bootstrap-windows.ps1 | iex
 ```
 
-### Option 2: Manual copy
-1. Copy `kds-bootstrap.sh` to your server
-2. `bash kds-bootstrap.sh` (or `bash kds-bootstrap.sh --with-api-keys`)
+**Or download and double-click:** `kds-install.bat`
+
+This installs everything automatically: Git, Node.js, Python, OpenClaw, all skills, and Ollama for local AI. No cloud needed.
+
+### 🐧 Linux / macOS
+```bash
+curl -sSL https://raw.githubusercontent.com/LORDBurnItUp/kds-openclaw/main/kds-bootstrap.sh | bash
+
+# With interactive API key setup
+curl -sSL https://raw.githubusercontent.com/LORDBurnItUp/kds-openclaw/main/kds-bootstrap.sh | bash -s -- --with-api-keys
+```
 
 ## What It Installs
 
