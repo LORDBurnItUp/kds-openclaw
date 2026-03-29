@@ -1,3 +1,12 @@
 node_modules/
+
+# Secrets — never commit these
 .env
 .env.template
+.env.*
+
+# Files containing API keys
+lord-sav/CONFIG.md
+lord-sav/CONFIG_NEEDED.md
+memory/2026-03-28.md
+memory/2026-03-29.md
