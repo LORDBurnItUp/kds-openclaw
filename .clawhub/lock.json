@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "skills": {
+    "discord": {
+      "version": "1.0.1",
+      "installedAt": 1774727025294
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1774727026743
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1774727028161
+    },
+    "xurl": {
+      "version": "1.0.0",
+      "installedAt": 1774727054061
+    },
+    "himalaya": {
+      "version": "1.0.0",
+      "installedAt": 1774727056241
+    },
+    "mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1774727058257
+    },
+    "notion": {
+      "version": "1.0.0",
+      "installedAt": 1774727061650
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1774741944536
+    },
+    "docker-ctl": {
+      "version": "1.0.0",
+      "installedAt": 1774741945276
+    },
+    "database-designer": {
+      "version": "2.1.1",
+      "installedAt": 1774741946048
+    },
+    "http-api": {
+      "version": "1.0.0",
+      "installedAt": 1774741951353
+    },
+    "vercel": {
+      "version": "1.0.1",
+      "installedAt": 1774742059851
+    },
+    "nginx": {
+      "version": "1.0.1",
+      "installedAt": 1774742060067
+    },
+    "supabase": {
+      "version": "1.0.0",
+      "installedAt": 1774742060118
+    },
+    "sysadmin": {
+      "version": "1.0.0",
+      "installedAt": 1774742060152
+    },
+    "ssh-essentials": {
+      "version": "1.0.0",
+      "installedAt": 1774742060263
+    },
+    "cloudflare-dns": {
+      "version": "1.0.0",
+      "installedAt": 1774742060326
+    },
+    "lookup-dns": {
+      "version": "1.0.0",
+      "installedAt": 1774742066571
+    },
+    "kubernetes-devops": {
+      "version": "1.0.0",
+      "installedAt": 1774742071331
+    },
+    "reddit": {
+      "version": "1.0.0",
+      "installedAt": 1774743732569
+    },
+    "linkedin-cli": {
+      "version": "1.0.0",
+      "installedAt": 1774743734748
+    },
+    "instagram-agent": {
+      "version": "1.0.0",
+      "installedAt": 1774743736854
+    },
+    "social-media-marketing": {
+      "version": "0.1.0",
+      "installedAt": 1774743746069
+    },
+    "facebook": {
+      "version": "1.0.1",
+      "installedAt": 1774743746258
+    },
+    "fiverr": {
+      "version": "1.0.0",
+      "installedAt": 1774743746259
+    },
+    "deep-research-prime": {
+      "version": "0.1.0",
+      "installedAt": 1774743765955
+    },
+    "monetize": {
+      "version": "1.0.2",
+      "installedAt": 1774743768634
+    },
+    "web": {
+      "version": "1.0.0",
+      "installedAt": 1774743792221
+    }
+  }
+}

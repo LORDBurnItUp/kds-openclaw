@@ -1,0 +1,56 @@
+# Scroll-Stop Prompts — Complete HTML Template
+
+_Dark sci-fi theme, 3-tab prompt copier with confetti_
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll-Stop Prompts — {{OBJECT_NAME}}</title>
+<style>
+/* Design Tokens */
+--lime: #BFF549;
+--bg: #02040a;
+--card-bg: rgba(255,255,255,0.03);
+--card-border: rgba(255,255,255,0.06);
+--text-secondary: #99A1AF;
+--font-body: 'Archivo', sans-serif;
+--font-display: 'Space Grotesk', sans-serif;
+--font-mono: 'JetBrains Mono', monospace;
+
+/* Features */
+/* 3 tabs (A/B/C) with color-coded letters */
+/* Confetti on copy */
+/* Keyboard shortcuts (1/2/3 for tabs, Cmd+C for copy) */
+/* Responsive mobile layout */
+/* Animated background grid + floating orbs */
+/* Glassmorphism panel */
+/* Instruction tags (img/vid) */
+/* Copy button with animated state */
+</style>
+</head>
+<!-- Full template saved in SCROLL_STOP_TEMPLATE.md -->
+```
+
+## Placeholders
+- `{{OBJECT_NAME}}` — Page title
+- `{{HEADING_LINE1}}` / `{{HEADING_LINE2}}` — Header text
+- `{{TAB_A_NAME}}` / `{{TAB_B_NAME}}` — Tab labels
+- `{{PROMPT_A}}` / `{{PROMPT_B}}` / `{{PROMPT_C}}` — Prompt content
+
+## Tab Color System
+- Tab A: Lime (#BFF549)
+- Tab B: Blue (#60a5fa)
+- Tab C: Yellow (#FACC15)
+
+## JavaScript Features
+- `switchTab(tab)` — Animated tab switching
+- `copyCurrentPrompt()` — Clipboard + confetti launch
+- `launchConfetti()` — 150-particle burst animation
+- Keyboard: 1/2/3 switch tabs, Cmd+C copies current prompt
+
+---
+
+_Added: 2026-03-28_

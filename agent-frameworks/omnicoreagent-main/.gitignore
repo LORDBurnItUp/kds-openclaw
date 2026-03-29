@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+servers_config.json
+*.log
+*.log.*
+*.db
+# MkDocs
+site/
+*.db
+venv/
+
+# ── Workspace (all agent runtime data) ──
+workspace/
+
+# Legacy (kept for safety during migration)
+memories/
+.omnicoreagent_config/*
+.omnicoreagent_artifacts/*
+
+.agents/skills/*
+omnistudio/web/node_modules/*
+omnicoreagent-video/*
+.gemini/*
+

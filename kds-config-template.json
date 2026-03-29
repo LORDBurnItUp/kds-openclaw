@@ -1,0 +1,112 @@
+{
+  "_comment": "KDS OpenClaw Config Template — fill in your tokens and drop at ~/.openclaw/openclaw.json",
+  "meta": {
+    "lastTouchedVersion": "2026.3.13"
+  },
+  "wizard": {
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "update": {
+    "checkOnStart": false
+  },
+  "browser": {
+    "enabled": true,
+    "headless": true,
+    "noSandbox": true
+  },
+  "auth": {
+    "profiles": {
+      "kilocode:default": {
+        "provider": "kilocode",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "kilocode/kilo-auto/free"
+      },
+      "workspace": "/root/.openclaw/workspace"
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "botToken": "YOUR_TELEGRAM_BOT_TOKEN_HERE",
+      "allowFrom": ["*"],
+      "groupPolicy": "disabled",
+      "streaming": "partial",
+      "execApprovals": {
+        "enabled": true,
+        "target": "both"
+      }
+    },
+    "streamchat": {
+      "enabled": true,
+      "apiKey": "YOUR_STREAMCHAT_API_KEY_HERE",
+      "botUserId": "YOUR_BOT_USER_ID_HERE",
+      "botUserToken": "YOUR_BOT_USER_TOKEN_HERE",
+      "botUserName": "KiloClaw"
+    }
+  },
+  "gateway": {
+    "port": 3001,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": [
+        "https://claw.kilosessions.ai",
+        "https://kilo.ai",
+        "https://www.kilo.ai"
+      ],
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "GENERATE_A_RANDOM_TOKEN_HERE"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "allow": ["streamchat", "telegram"],
+    "load": {
+      "paths": [
+        "/usr/local/lib/node_modules/@wunderchat/openclaw-channel-streamchat"
+      ]
+    },
+    "entries": {
+      "streamchat": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}
