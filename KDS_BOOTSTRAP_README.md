@@ -2,6 +2,30 @@
 
 **One script to rule them all.** Drop it on any fresh OpenClaw instance, run it, and everything installs + configures automatically.
 
+## ⚡ Recommended: Master Setup (Full Send)
+
+**This is the one.** Installs everything, configures every field, starts the gateway, runs health checks. Zero manual steps (except API keys).
+
+```bash
+# Linux — full end-to-end setup
+curl -sSL https://raw.githubusercontent.com/LORDBurnItUp/kds-openclaw/main/kds-master-setup.sh | bash
+
+# With Telegram bot token
+curl -sSL https://raw.githubusercontent.com/LORDBurnItUp/kds-openclaw/main/kds-master-setup.sh | bash -s -- --token YOUR_BOT_TOKEN
+```
+
+### What `kds-master-setup.sh` does:
+- Installs all system deps (git, node, python, build tools)
+- Installs all CLI tools (mcporter, vercel, himalaya, xurl, gh, kilo, ollama)
+- Clones this repo as the workspace
+- **Writes complete OpenClaw config** — every single field: model, channels, streaming, exec, heartbeat, memory search, compaction, plugins, gateway auth, browser, etc.
+- **Creates all workspace files** — SOUL.md, AGENTS.md, USER.md, TOOLS.md, IDENTITY.md, HEARTBEAT.md, MEMORY.md, memory logs
+- **Configures all integrations** — himalaya email config, GitHub auth prompt, xurl config dir, Kilo CLI config, git identity
+- **Creates .env** from template
+- **Starts the gateway** on port 3001
+- **Runs health check** — verifies every tool, every file, every integration
+- Pulls Ollama model (qwen2.5:1.5b) for local AI fallback
+
 ## Quick Start
 
 ### 🪟 Windows 10/11 (Beginner-Friendly)
